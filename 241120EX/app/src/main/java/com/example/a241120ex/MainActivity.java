@@ -14,30 +14,29 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout baseLayout;
-    Button btn;
+    Button button1;
 
-    @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("배경색 바꾸기");
 
-        baseLayout=(LinearLayout) findViewById(R.id.baseLayout);
-        btn=(Button) findViewById(R.id.button);
+        baseLayout = (LinearLayout) findViewById(R.id.baseLayout);
+        button1 = (Button) findViewById(R.id.button);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        MenuInflater mInflater=getMenuInflater();
-        mInflater.inflate(R.menu.menu, menu);
+        MenuInflater mInflater = getMenuInflater();
+        mInflater.inflate(R.menu.menu1, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if(item.getItemId()==R.id.itemRed){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.itemRed) {
             baseLayout.setBackgroundColor(Color.RED);
             return true;
         } else if (item.getItemId() == R.id.itemGreen) {
@@ -47,13 +46,14 @@ public class MainActivity extends AppCompatActivity {
             baseLayout.setBackgroundColor(Color.BLUE);
             return true;
         } else if (item.getItemId() == R.id.subRotate) {
-            btn.setRotation(45);
+            button1.setRotation(45);
             return true;
         } else if (item.getItemId() == R.id.subSize) {
-            btn.setScaleX(2);
+            button1.setScaleX(2);
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        return false;
+
     }
 
 }
