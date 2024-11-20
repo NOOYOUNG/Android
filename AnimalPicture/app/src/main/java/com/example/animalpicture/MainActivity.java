@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     Toast.makeText(getApplicationContext(), "동물을 선택하세요", Toast.LENGTH_SHORT).show();
                 }
-            }
+            }R
         });
 
     }
