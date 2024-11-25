@@ -17,28 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/rGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Second Activity" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Third Activity" />
-    </RadioGroup>
-
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/openBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="새 화면 열기" />
+        android:text="새 화면 열기"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="407dp" />
 
 </LinearLayout>

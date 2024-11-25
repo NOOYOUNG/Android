@@ -6,39 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    android:background="#0000ff">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1페이지"
+        android:text="3페이지"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/rGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Second Activity" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Third Activity" />
-    </RadioGroup>
-
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="새 화면 열기" />
+        android:text="돌아가기"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="407dp" />
 
 </LinearLayout>
